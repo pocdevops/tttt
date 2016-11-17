@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
+  - source: /target/CounterWebApp.war
+    destination: /usr/share/tomcat7/webapps
 hooks:
   BeforeInstall:
     - location: scripts/clean_repo.sh
